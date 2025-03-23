@@ -3,13 +3,19 @@
 import { useLanguage } from "@/app/context/language-context"
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 export function HeroCarousel() {
   const { locale, t } = useLanguage()
   const slides = t.hero.carouselSlides // 从语言文件获取配置
 
   return (
-    <Carousel className="w-full h-[500px] relative">
+    <Carousel className="w-full h-[500px] relative"
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}>
       <CarouselContent>
         {slides.map((slide, index) => (
           <CarouselItem key={index} className="h-[500px]">

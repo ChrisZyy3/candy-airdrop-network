@@ -30,7 +30,7 @@ export const en = {
         subtitle2: "The world's most professional candy airdrop App"
       },
       {
-        image: "/hero-background-2.png", 
+        image: "/hero-background-5.png", 
         title: "CryptoCurrency airdrop",
         highlight: "First Search Program",
         subtitle: "The first search platform for cryptocurrency airdrop",

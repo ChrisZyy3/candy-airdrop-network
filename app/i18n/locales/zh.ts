@@ -30,7 +30,7 @@ export const zh = {
         subtitle2: "Gateway to the Web3 world",
       },
       {
-        image: "/hero-background-2.png",
+        image: "/hero-background-5.png",
         title: "加密货币空投第一",
         highlight: "搜索平台",
         subtitle: "The first search platform for cryptocurrency airdrop",
