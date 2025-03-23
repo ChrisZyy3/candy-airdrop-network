@@ -4,6 +4,8 @@ import { useLanguage } from "@/app/context/language-context"
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import { AndroidOutlined, AppleOutlined } from "@ant-design/icons"
+import { Button } from "@/components/ui/button"
 
 export function HeroCarousel() {
   const { locale, t } = useLanguage()
@@ -39,6 +41,14 @@ export function HeroCarousel() {
                     <div className="mt-4">
                       <p className="text-xl text-white">{slide.subtitle}</p>
                       <p className="text-xl text-primary">{slide.subtitle2}</p>
+                    </div>
+                    <div className="flex space-x-4 mt-6">
+                      <Button className="bg-black/70 hover:bg-black text-white">
+                        <AndroidOutlined className="text-xl mr-2" /> Google Play
+                      </Button>
+                      <Button className="bg-black/70 hover:bg-black text-white">
+                        <AppleOutlined className="text-xl mr-2" /> App Store
+                      </Button>
                     </div>
                   </div>
                 </div>
