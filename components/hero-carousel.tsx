@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { AndroidOutlined, AppleOutlined } from "@ant-design/icons"
-import { Button } from "@/components/ui/button"
+import { RainbowButton } from "@/components/magicui/rainbow-button"
 
 export function HeroCarousel() {
   const { locale, t } = useLanguage()
@@ -43,12 +43,12 @@ export function HeroCarousel() {
                       <p className="text-xl text-primary">{slide.subtitle2}</p>
                     </div>
                     <div className="flex space-x-4 mt-6">
-                      <Button className="bg-black/70 hover:bg-black text-white">
+                      <RainbowButton>
                         <AndroidOutlined className="text-xl mr-2" /> Google Play
-                      </Button>
-                      <Button className="bg-black/70 hover:bg-black text-white">
+                      </RainbowButton>
+                      <RainbowButton>
                         <AppleOutlined className="text-xl mr-2" /> App Store
-                      </Button>
+                      </RainbowButton>
                     </div>
                   </div>
                 </div>
